@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Chat</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Chat Page</h1>
+    <h2>{{info["message"]}}</h2>
+    
+</div>
+
+<div class="content">
+<form action="/logout" method="post">
+<input type="submit" value="Logout">
+</form>    
+    
+    
+</div>
+
+{% endblock %}
